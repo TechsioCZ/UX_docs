@@ -1,0 +1,81 @@
+# Token Icon/token-icon-drag-horizontal
+
+Glyph `token-icon-drag-horizontal` označuje úchyt pro změnu pořadí řádků tabulky.
+
+**Vazba:** Table. Rozsah použití se týká tohoto dílu; úplný pracovní průchod řídí jeho hostitel.
+
+## Kdy použít
+
+Glyph `token-icon-drag-horizontal` označuje úchyt pro změnu pořadí řádků tabulky. Použijte ji pouze ve slotu se stejným významem; název ovladače nebo související text tento význam zpřístupní.
+
+## Kdy zvolit alternativu
+
+Když má funkce jiný význam než tato kresba, použijte odpovídající glyph. U neobvyklého nebo závažného příkazu zvolte textové Button či Link; samotný symbol nesmí nahrazovat jeho vysvětlení.
+
+## Anatomie, stavy a varianty
+
+Součást skladby **Table**. Varianty níže popisují tento konkrétní díl; ostatní části mohou mít vlastní odlišné osy a odpovědnosti.
+Samostatnou osu error/default tento glyph nemá. Výsledek operace i význam případné změny barvy řídí skutečný hostitel; nevytvářejte neexistující varianty samotné kresby.
+
+## Chování a akce
+
+### Co může vyvolat nebo zprostředkovat
+
+- V pojmenovaném hostiteli nabídnout: Změnit pořadí řádku dostupným ovladačem.
+
+### Co vyvolávat nemá
+
+- Nepoužít pro přesun sloupce ani změnu hodnot v buňkách.
+
+### Přechody a odpovědnost
+
+Kresbu dosazuje skutečný hostitel podle podmínky popsané níže. Změna glyphu sama nepotvrzuje výběr ani výsledek požadavku. Je-li symbol v ovladači, aktivaci, případné čekání, odmítnutí a návrat řeší tento ovladač; glyph nevytváří další fokus ani vlastní uloženou hodnotu.
+
+### Konkrétní pravidla použití
+
+- Vkládejte do ovládání přesunu řádku; nezaměňujte jej s úchytem sloupce.
+- Přesun musí mít pojmenovaný ovladač a dostupnou alternativu k tažení.
+
+## Obsah a pojmenování
+
+Technický název tohoto glyphu není text pro uživatele. Pokud je použit v samostatném ovladači, jeho název pojmenuje konkrétní výsledek a případně objekt zásahu. Dekorativní kresba neopakuje zbytečně stejné sdělení vedle již pojmenovaného obsahu.
+
+## Přístupnost a prostředí
+
+Vizuální část sama nevyžaduje další zastávku fokusu. Název a případnou aktivaci poskytuje její skutečný hostitel. Význam zůstává dostupný také textově nebo strukturou; samotná barva či poloha značky jej nenahrazuje.
+
+## Omezení a příklady podle typu projektu
+
+**Společné pro všechny tři následující příklady:**
+
+- **Společná volba a varianta:** Symbol doplňuje uvedený význam; konkrétní operaci provádí pojmenovaný hostitel, nikoli kresba. Výsledek operace řídí hostitel; kresba nevytváří další vlastní validační cyklus.
+
+- **Pravidlo použití:** Nepoužít pro přesun sloupce ani změnu hodnot v buňkách.
+
+- **Společné výjimky a návrat:** Při odmítnutí nebo zrušení se nesmí zobrazit falešné potvrzení; výsledek i návrat řeší hostitel.
+
+### ERP — seznam objednávek
+
+**Situace a cíl:** V tomto projektu se řeší význam nebo ovladač u „řádek objednávky O-1048“; je nutné odlišit samotnou kresbu od účinku hostitele.
+
+**Průchod a výsledek:** Do skutečného ovladače u „řádek objednávky O-1048“ vložte glyph a název „Změnit pořadí řádku dostupným ovladačem“. Až aktivace hostitele vyvolá tuto akci; čtení symbolu ani hover ne. Pořadí mění řádek; úchyt nesmí přeuspořádat sloupce. Stejný přesun je dostupný i bez tažení.
+
+### Web — zákaznické objednávky
+
+**Situace a cíl:** V tomto projektu se řeší význam nebo ovladač u „řádek objednávky W-248“; je nutné odlišit samotnou kresbu od účinku hostitele.
+
+**Průchod a výsledek:** Do skutečného ovladače u „řádek objednávky W-248“ vložte glyph a název „Změnit pořadí řádku dostupným ovladačem“. Až aktivace hostitele vyvolá tuto akci; čtení symbolu ani hover ne. Pořadí mění řádek; úchyt nesmí přeuspořádat sloupce. Stejný přesun je dostupný i bez tažení.
+
+### Interní systém — ITSM přehled
+
+**Situace a cíl:** V tomto projektu se řeší význam nebo ovladač u „řádek incidentu INC-142“; je nutné odlišit samotnou kresbu od účinku hostitele.
+
+**Průchod a výsledek:** Do skutečného ovladače u „řádek incidentu INC-142“ vložte glyph a název „Změnit pořadí řádku dostupným ovladačem“. Až aktivace hostitele vyvolá tuto akci; čtení symbolu ani hover ne. Pořadí mění řádek; úchyt nesmí přeuspořádat sloupce. Stejný přesun je dostupný i bez tažení.
+
+## Související pravidla a vazba na úroveň 2
+
+Tato dokumentace patří do **úrovně 3 — komponenty**. Nadřazená **úroveň 2 — pravidla značky** má určit schválenou ikonografii, optické velikosti a sémantické barvy symbolů, v návaznosti na názvy sloupců, hustotu tabulky a vizuální hierarchii výběru a chyb a respektuje korporátní úroveň 1. Konkrétní pravidla úrovně 2 zatím nejsou dodaná; ukázková barva, téma nebo text je nenahrazují.
+
+Produkt dále určí zdroj záznamů, filtry, řazení, rozsah výběru, oprávnění a uložení buněk. Při doplnění pravidel značky zkontrolujte zejména vazbu symbolu na název hostitele a zachování jeho skutečného významu. Konflikt se neřeší tichým přejmenováním stavu nebo přidáním nedoložené funkce.
+
+[Komponenta ve Figmě](https://www.figma.com/design/gi5GUSWwAeXknaKEeLqK5w/New-Design-System?node-id=3510-1119)
